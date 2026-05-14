@@ -253,11 +253,10 @@ function NoticeCard({
     <section>
       <div className="flex flex-col p-6">
         <div className="bg-appbg text-justify">
-          <h1 className="text-lg font-semibold">
-            Prezado {candidateName},
-          </h1>
+          <h1 className="text-lg font-semibold">Prezado {candidateName},</h1>
           <p className="text-md text-muted text-justify">
-            gostariamos de parabeniza-lo pelo desempenho e dedicação durante o programa de formação para a certificação Ancord.
+            gostariamos de parabeniza-lo pelo desempenho e dedicação durante o
+            programa de formação para a certificação Ancord.
           </p>
           <div className="mt-3">
             <button
@@ -294,7 +293,7 @@ function NoticeCard({
           <div className="mt-3 space-y-3 text-sm text-muted leading-relaxed">
             <p>
               A avaliação será realizada{" "}
-              <span className="text-text font-semibold">online no dia</span> até{" "}
+              <span className="text-text font-semibold">online</span> no dia{" "}
               <span className="text-text font-semibold">25/05/2026</span>. O
               teste possui duração aproximada de{" "}
               <span className="text-text font-semibold">2 horas</span> e será
@@ -308,9 +307,8 @@ function NoticeCard({
             </p>
 
             <p>
-              No dia do exame,
-              o psicólogo responsável entrará em contato para esclarecimentos e
-              orientações por meio do{" "}
+              No dia do exame, o psicólogo responsável entrará em contato para
+              esclarecimentos e orientações por meio do{" "}
               <span className="text-text font-semibold">
                 telefone cadastrado
               </span>
@@ -338,9 +336,7 @@ function NoticeCard({
             </p>
 
             <div className="mt-3 rounded-xl border  bg-black/20 p-3">
-              <p className=" text-sm text-text font-semibold">
-                Atenção:
-              </p>
+              <p className=" text-sm text-text font-semibold">Atenção:</p>
               <p className="mt-2 text-sm text-muted">
                 O registro em questão{" "}
                 <span className="text-text font-semibold">
@@ -472,10 +468,9 @@ function ExamResult(props: { onBack: () => void }) {
       <div className="flex items-center justify-between">
         <p className="text-lg font-semibold text-text">
           Resultado da Avaliação
-           <p className="text-sm">Certificação Ancord</p>
-
+          <p className="text-sm">Certificação Ancord</p>
         </p>
-       
+
         <button
           type="button"
           onClick={props.onBack}
@@ -486,7 +481,8 @@ function ExamResult(props: { onBack: () => void }) {
       </div>
       <div className="overflow-auto max-h-[60vh] border border-border rounded-xl">
         <p className=" p-2 text-md font-semibold text-center text-text">
-          Desempenho: {totalCorrect}/{totalQuestions} acertos ({overallPercent}%)
+          Desempenho: {totalCorrect}/{totalQuestions} acertos ({overallPercent}
+          %)
         </p>
       </div>
 
@@ -497,10 +493,7 @@ function ExamResult(props: { onBack: () => void }) {
           const approved = m.min !== undefined ? m.correct >= m.min : true;
 
           return (
-            <div
-              key={m.id}
-              className="rounded-xl border border-border p-2 "
-            >
+            <div key={m.id} className="rounded-xl border border-border p-2 ">
               <div className="flex justify-between items-start">
                 <p className="text-sm font-semibold text-text">
                   {m.id}. {m.name}
