@@ -23,7 +23,7 @@ const RECORD_FULL = `${RECORD_PREFIX}${VALID_RECORD_NUMBER}`;
 
 // Dados fixos (como você pediu)
 const RECORD_DATA = {
-  certification: `Certificação Ancord: ${RECORD_FULL} registro temporário — avaliação psicológica pendente`,
+  certification: `Certificação Ancord: ${RECORD_FULL} registro temporário – avaliação psicológica pendente`,
   issueDate: "02/03/2026",
   expirationDate: "31/07/2026",
   advisorName: "Adler Moreira Pires Ferreira",
