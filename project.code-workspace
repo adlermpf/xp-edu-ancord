@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "src"
+        }
+    ],
+    "settings": {
+        "editor.quickSuggestions": {
+            "strings": "on"
+          },
+          "tailwindCSS.includeLanguages": {
+            "plaintext": "html"
+          },
+          "files.associations": {
+            "*.css": "tailwindcss"
+          }
+    }
+}
