@@ -283,7 +283,7 @@ function NoticeCard({
             <span className="text-text font-semibold">
               Certificado de Assessor(a) de Investimento (Ancord)
             </span>
-            . Falta apenas mais um processo obrigatório:{" "}
+            . Resta apenas mais um processo obrigatório:{" "}
             <span className="text-text font-semibold">
               a avaliação psicológica
             </span>
@@ -318,7 +318,7 @@ function NoticeCard({
 
           <div className="mt-6 rounded-xl border border-xpgreen/25 bg-gray-900/20 p-3 space-y-2">
             <p className="text-md text-text font-semibold">
-              Registro temporário
+              Registro temporário (prorrogado até 31/07/2026)
             </p>
 
             <p className="text-sm">
