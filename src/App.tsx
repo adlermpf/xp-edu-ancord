@@ -25,7 +25,7 @@ const RECORD_FULL = `${RECORD_PREFIX}${VALID_RECORD_NUMBER}`;
 const RECORD_DATA = {
   certification: `Certificação Ancord: ${RECORD_FULL} registro temporário — avaliação psicológica pendente`,
   issueDate: "02/03/2026",
-  expirationDate: "13/03/2026",
+  expirationDate: "31/07/2026",
   advisorName: "Adler Moreira Pires Ferreira",
   cpf: "396.532.928-62",
   motherName: "Aurismar Belém Moreira",
@@ -293,9 +293,9 @@ function NoticeCard({
 
           <div className="mt-3 space-y-3 text-sm text-muted leading-relaxed">
             <p>
-              A avaliação deverá ser realizada{" "}
-              <span className="text-text font-semibold">online</span> até{" "}
-              <span className="text-text font-semibold">13/03/2026</span>. O
+              A avaliação será realizada{" "}
+              <span className="text-text font-semibold">online no dia</span> até{" "}
+              <span className="text-text font-semibold">25/05/2026</span>. O
               teste possui duração aproximada de{" "}
               <span className="text-text font-semibold">2 horas</span> e será
               aplicado por um{" "}
@@ -308,9 +308,8 @@ function NoticeCard({
             </p>
 
             <p>
-              A partir de{" "}
-              <span className="text-text font-semibold">04/03/2026</span>, o
-              psicólogo responsável entrará em contato para esclarecimentos e
+              No dia do exame,
+              o psicólogo responsável entrará em contato para esclarecimentos e
               orientações por meio do{" "}
               <span className="text-text font-semibold">
                 telefone cadastrado
