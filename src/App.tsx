@@ -23,8 +23,10 @@ const RECORD_FULL = `${RECORD_PREFIX}${VALID_RECORD_NUMBER}`;
 
 // Dados fixos (como você pediu)
 const RECORD_DATA = {
-  certification: `Certificação Ancord: ${RECORD_FULL} registro temporário – avaliação psicológica pendente`,
-  issueDate: "02/03/2026",
+  certification: `Certificação Ancord: ${RECORD_FULL} — registro temporário`,
+  status: `Aguardando homologação CVM`,
+  deadline: `31/07/2026`,
+  queryDate: "19/06/2026",
   expirationDate: "31/07/2026",
   advisorName: "Adler Moreira Pires Ferreira",
   cpf: "396.532.928-62",
@@ -33,7 +35,7 @@ const RECORD_DATA = {
   address:
     "Rua Édson Nores Lui 147 Q23L11, Gaivota 2, São José do Rio Preto - SP, CEP: 15063-065",
   requestingManager:
-    "WIT INVEST ASSESSOR DE INVESTIMENTO LTDA. CNPJ: 10.411.461/0001-00.",
+    "WIT INVEST ASSESSORIA DE INVESTIMENTO LTDA. CNPJ: 10.411.461/0001-00.",
   underResponsibility:
     "Sob responsabilidade de XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S/A. CNPJ: 02.332.886/0001-04.",
 };
@@ -251,101 +253,58 @@ function NoticeCard({
 }: NoticeProps) {
   return (
     <section>
-      <div className="flex flex-col p-6">
+      <div className="flex flex-col p-4">
         <div className="bg-appbg text-justify">
           <h1 className="text-lg font-semibold">Prezado {candidateName},</h1>
-          <p className="text-md text-muted text-justify">
-            gostariamos de parabeniza-lo pelo desempenho e dedicação durante o
-            programa de formação para a certificação Ancord.
-          </p>
-          <div className="mt-3">
-            <button
-              type="button"
-              onClick={onOpenResult}
-              className="
-    w-full sm:w-auto
-    rounded-xl
-    border border-border
-    px-4 py-2
-    text-lg
-    text-text
-    bg-blue-900 hover:bg-blue-800
-    transition
-    text-nowrap
-  "
-            >
-              Confira seu desempenho
-            </button>
-          </div>
+          <p className="text-md text-muted text-justify"></p>
+
           <p className="mt-3 text-sm text-muted leading-relaxed">
-            Você concluiu com êxito as etapas do programa e está muito perto de
-            obter o{" "}
-            <span className="text-text font-semibold">
-              Certificado de Assessor(a) de Investimento (Ancord)
-            </span>
-            . Resta apenas mais um processo obrigatório:{" "}
-            <span className="text-text font-semibold">
-              a avaliação psicológica
-            </span>
-            .
+            Você foi aprovado na <strong>prova de certificação Ancord</strong>,
+            realizada no dia 02/03/2026, bem como na{" "}
+            <strong>avaliação psicológica</strong> mandatória realizada no dia 25/05/2026,
+            e está apto a obter o registro de{" "}
+            <strong>assessor de investimentos</strong> junto à Ancord.
+          </p>
+          <p className="mt-3 text-sm text-muted leading-relaxed">
+            As informações sobre o registro estão detalhadas abaixo.
+            Recomendamos a leitura atenta de todas as informações, bem como o
+            acompanhamento do processo de homologação.
           </p>
 
-          <div className="mt-3 space-y-3 text-sm text-muted leading-relaxed">
-            <p>
-              A avaliação será realizada{" "}
-              <span className="text-text font-semibold">online</span> no dia{" "}
-              <span className="text-text font-semibold">25/05/2026</span>. O
-              teste possui duração aproximada de{" "}
-              <span className="text-text font-semibold">2 horas</span> e será
-              aplicado por um{" "}
-              <span className="text-text font-semibold">
-                psicólogo credenciado
-              </span>
-              , por meio da plataforma{" "}
-              <span className="text-text font-semibold">SATEPSI</span> do
-              Conselho Federal de Psicologia (CFP).
-            </p>
-
-            <p>
-              No dia do exame, o psicólogo responsável entrará em contato para
-              esclarecimentos e orientações por meio do{" "}
-              <span className="text-text font-semibold">
-                telefone cadastrado
-              </span>
-              .
-            </p>
-          </div>
-
-          <div className="mt-6 rounded-xl border border-xpgreen/25 bg-gray-900/20 p-3 space-y-2">
+          <div className="mt-4 rounded-xl border border-xpgreen/25 bg-gray-900/20 p-3 space-y-2">
             <p className="text-md text-text font-semibold">
-              Registro temporário (prorrogado até 31/07/2026)
+              Registro temporário
             </p>
 
             <p className="text-sm">
               <span className="font-semibold">ANCORD:</span>{" "}
-              <span className="font-semibold">AI-3001665</span>{" "}
-              <p className="text-muted">{candidateName}</p>
+              <span className="font-semibold">AI-3001665</span>
+              {" — "}
+              {candidateName}
             </p>
 
             <p className="text-sm text-text">
-              Este registro deverá ser{" "}
+              O registro entrará em vigor após a homologação junto à CVM.
+            </p>
+            <p className="text-sm text-text">
               <span className="font-semibold">
-                informado ao psicólogo responsável
-              </span>{" "}
-              quando solicitado.
+                O candidato poderá acompanhar os detalhes do registro através do
+                botão "Detalhes do registro".
+              </span>
             </p>
 
-            <div className="mt-3 rounded-xl border  bg-black/20 p-3">
-              <p className=" text-sm text-text font-semibold">Atenção:</p>
-              <p className="mt-2 text-sm text-muted">
+            <div className="mt-1 p-2">
+              <p className=" text-xs text-text font-bold">Atenção:</p>
+              <p className="mt-1 text-xs text-muted">
                 O registro em questão{" "}
                 <span className="text-text font-semibold">
-                  não possui validade junto à CVM
+                  ainda não possui homologação junto à CVM.
                 </span>{" "}
-                até a aprovação na avaliação psicológica. Portanto, está{" "}
+                Portanto, está{" "}
                 <span className="text-text font-semibold">vedada</span> sua
-                utilização para o exercício de assessor(a) de investimentos,
-                conforme as resoluções{" "}
+                utilização para o exercício de{" "}
+                <strong>assessor(a) de investimentos</strong>, conforme as
+                resoluções{" "}
                 <span className="text-text font-semibold">CVM 178</span> e{" "}
                 <span className="text-text font-semibold">CVM 179 </span>
                 (marco dos assessores), em conjunto com a{" "}
@@ -358,13 +317,31 @@ function NoticeCard({
           </div>
         </div>
 
-        <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-3 flex flex-row gap-3 sm:flex-row sm:items-center justify-between">
           <button
             type="button"
             onClick={onOpenLookup}
-            className=" mb-2 rounded-xl border border-border px-4 py-2 text-md text-text bg-green-900 hover:bg-green-800 transition"
+            className="mb-2 rounded-xl border border-border px-4 py-2 text-lg text-text text-nowrap bg-green-900 hover:bg-green-800 transition"
           >
-            Consulte os detalhes do registro
+            Detalhes do registro
+          </button>
+          <button
+            type="button"
+            onClick={onOpenResult}
+            className="
+            mb-2
+    sm:w-auto
+    rounded-xl
+    border border-border
+    px-4 py-2
+    text-lg
+    text-text
+    bg-blue-900 hover:bg-blue-800
+    transition
+    text-nowrap
+  "
+          >
+            Desempenho
           </button>
         </div>
       </div>
@@ -402,19 +379,28 @@ function RecordResultCard(props: {
             <p className="text-sm text-text font-semibold text-pretty">
               {RECORD_DATA.certification}
             </p>
-            <div className="">
-              <p className="mt-1 text-xs text-muted">
-                Data da emissão: {RECORD_DATA.issueDate}
-              </p>
-              <p className="text-xs text-muted">
-                Validade: {RECORD_DATA.expirationDate}
-              </p>
-            </div>
+            <p className="mt-1 text-xs text-muted">
+              <span className="text-text font-semibold">
+                Data da requisição: {RECORD_DATA.queryDate}
+              </span>
+            </p>
+            <p className="text-xs text-muted">
+              Status:{" "}
+              <span className="text-text font-semibold text-yellow-500">
+                {RECORD_DATA.status}
+              </span>
+            </p>
+            <p className="text-xs text-muted">
+              Data-limite para homologação:{" "}
+              <span className="text-text font-semibold">
+                {RECORD_DATA.deadline}
+              </span>
+            </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <Info
-              label="Assessor — via registro temporário"
+              label="Assessor — registro temporário"
               value={RECORD_DATA.advisorName}
             />
             <Info label="CPF:" value={RECORD_DATA.cpf} />
@@ -438,9 +424,8 @@ function RecordResultCard(props: {
             <p className="text-sm text-text font-semibold">Aviso:</p>
             <p className="mt-2 text-sm text-muted leading-relaxed text-justify">
               Este registro é temporário e não autoriza o exercício de
-              assessor(a) de investimentos até a aprovação na avaliação
-              psicológica, conforme CVM 178 e 179, em conjunto com a Instrução
-              CVM 610.
+              assessor(a) de investimentos até sua homologação pela CVM,
+              conforme CVM 178 e 179, em conjunto com a Instrução CVM 610.
             </p>
           </div>
         </div>
