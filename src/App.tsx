@@ -37,7 +37,7 @@ const RECORD_DATA = {
   requestingManager:
     "WIT INVEST ASSESSORIA DE INVESTIMENTO LTDA. CNPJ: 10.411.461/0001-00.",
   underResponsibility:
-    "Sob responsabilidade de XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S/A. CNPJ: 02.332.886/0001-04.",
+    "Sob responsabilidade de Grupo XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S/A. CNPJ: 02.332.886/0001-04.",
 };
 
 type ModuleResult = {
@@ -132,7 +132,7 @@ export default function App() {
           <div className="flex items-center justify-between gap-4">
             <div>
               <p className="text-lg text-muted">
-                <img src={appConfig.xpLogoUrl} alt="XP Educação" />
+                <img src={appConfig.xpLogoUrl} alt="Grupo XP Investimentos" />
               </p>
               <p className="mt-2 font-semibold text-text">
                 Certificação Ancord
@@ -159,7 +159,7 @@ export default function App() {
         </main>
 
         <footer className="mt-8 text-xs text-muted text-center">
-          <p>XP Educação © Todos os direitos reservados.</p>
+          <p>Grupo XP Investimentos © Todos os direitos reservados.</p>
         </footer>
       </div>
 
