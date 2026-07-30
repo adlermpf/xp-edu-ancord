@@ -392,17 +392,14 @@ function RecordResultCard(props: {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-1">
             <Info
               label="Título: Assessor de investimentos"
               value={RECORD_DATA.advisorName}
             />
-            <Info label="CPF:" value={RECORD_DATA.cpf} />
-            <Info label="Nome da mãe:" value={RECORD_DATA.motherName} />
-            <Info label="Cidade natal:" value={RECORD_DATA.birthCity} />
           </div>
 
-          <Info label="Logradouro:" value={RECORD_DATA.address} />
+          
 
           <div className="rounded-xl border border-border bg-black/20 p-4">
             <p className="text-xs text-muted">Gestor solicitante:</p>
