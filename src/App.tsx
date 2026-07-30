@@ -23,9 +23,9 @@ const RECORD_FULL = `${RECORD_PREFIX}${VALID_RECORD_NUMBER}`;
 
 // Dados fixos (como você pediu)
 const RECORD_DATA = {
-  certification: `Certificação Ancord: ${RECORD_FULL} — registro temporário`,
-  status: `Aguardando homologação CVM`,
-  deadline: `31/07/2026`,
+  certification: `Certificação Ancord: ${RECORD_FULL} — Registro definitivo`,
+  status: `Homologado`,
+  deadline: `30/07/2026`,
   queryDate: "19/06/2026",
   expirationDate: "31/07/2026",
   advisorName: "Adler Moreira Pires Ferreira",
@@ -259,21 +259,35 @@ function NoticeCard({
           <p className="text-md text-muted text-justify"></p>
 
           <p className="mt-3 text-sm text-muted leading-relaxed">
-            Você foi aprovado na <strong>prova de certificação Ancord</strong>,
-            realizada no dia 02/03/2026, bem como na{" "}
-            <strong>avaliação psicológica</strong> mandatória realizada no dia 25/05/2026,
-            e está apto a obter o registro de{" "}
-            <strong>assessor de investimentos</strong> junto à Ancord.
+            O Grupo XP, em parceria com a ANCORD, informa a conclusão do
+            processo de homologação junto a CVM e emissão do registro definitivo
+            de <strong>Assessor de Investimentos</strong>.
           </p>
+
+          <p className="mt-1 text-xs">
+           Para consultar a autenticidade, clique no botão abaixo e informe o
+            número do registro.
+          </p>
+
           <p className="mt-3 text-sm text-muted leading-relaxed">
-            As informações sobre o registro estão detalhadas abaixo.
-            Recomendamos a leitura atenta de todas as informações, bem como o
-            acompanhamento do processo de homologação.
+            <span className="text-sm text-muted">
+              Nós próximos dias, um escritório parceiro da XP Investimetos de
+              São José do Rio Preto, SP, entrará em contato para fornecer os
+              detalhes sobre a vaga de{" "}
+              <strong> Assessor de Investimentos Júnior</strong>, bem como os
+              próximos passos do processo de admissão.
+            </span>
+          </p>
+
+          <p className="mt-3 text-sm text-muted leading-relaxed">
+            Em breve, esperamos contar com você em nosso time de profissionais de
+            investimentos, contribuindo para o crescimento do Grupo XP e para o
+            sucesso de nossos investidores.
           </p>
 
           <div className="mt-4 rounded-xl border border-xpgreen/25 bg-gray-900/20 p-3 space-y-2">
             <p className="text-md text-text font-semibold">
-              Registro temporário
+              Registro definitivo
             </p>
 
             <p className="text-sm">
@@ -283,35 +297,24 @@ function NoticeCard({
               {candidateName}
             </p>
 
-            <p className="text-sm text-text">
-              O registro entrará em vigor após a homologação junto à CVM.
-            </p>
-            <p className="text-sm text-text">
-              <span className="font-semibold">
-                O candidato poderá acompanhar os detalhes do registro através do
-                botão "Detalhes do registro".
-              </span>
-            </p>
-
             <div className="mt-1 p-2">
-              <p className=" text-xs text-text font-bold">Atenção:</p>
+              <p className="text-xs text-text font-bold">Atenção:</p>
+
               <p className="mt-1 text-xs text-muted">
-                O registro em questão{" "}
-                <span className="text-text font-semibold">
-                  ainda não possui homologação junto à CVM.
-                </span>{" "}
-                Portanto, está{" "}
-                <span className="text-text font-semibold">vedada</span> sua
-                utilização para o exercício de{" "}
-                <strong>assessor(a) de investimentos</strong>, conforme as
-                resoluções{" "}
-                <span className="text-text font-semibold">CVM 178</span> e{" "}
-                <span className="text-text font-semibold">CVM 179 </span>
-                (marco dos assessores), em conjunto com a{" "}
-                <span className="text-text font-semibold">
-                  Instrução CVM 610
+                O profissional detém a{" "}
+                <span className="font-semibold text-text">
+                  certificação e credenciamento válidos para o exercício da
+                  atividade de assessor de investimentos
                 </span>
-                .
+                , comprometendo-se a atuar em conformidade com a{" "}
+                <span className="font-semibold text-text">
+                  Resolução CVM nº 178
+                </span>
+                , com as demais normas aplicáveis e sob a responsabilidade da
+                instituição integrante do sistema de distribuição de valores
+                mobiliários à qual estiver vinculado. O fornecimento de
+                informações falsas, inexatas ou desatualizadas poderá resultar
+                na adoção das medidas administrativas, civis e penais cabíveis.
               </p>
             </div>
           </div>
@@ -358,11 +361,10 @@ function RecordResultCard(props: {
       <div className=" bg-appbg p-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 className="text-xl font-semibold text-text">Resultado</h2>
-            <p className="mt-2 text-sm text-muted">
+            <h2 className="text-xl font-semibold text-text">
               Consulta:{" "}
               <span className="text-text font-semibold">{RECORD_FULL}</span>
-            </p>
+            </h2>
           </div>
 
           <button
@@ -374,7 +376,7 @@ function RecordResultCard(props: {
           </button>
         </div>
 
-        <div className="mt-6 space-y-4">
+        <div className="mt-4 space-y-4">
           <div className="rounded-xl border border-border bg-black/20 p-4">
             <p className="text-sm text-text font-semibold text-pretty">
               {RECORD_DATA.certification}
@@ -386,12 +388,12 @@ function RecordResultCard(props: {
             </p>
             <p className="text-xs text-muted">
               Status:{" "}
-              <span className="text-text font-semibold text-yellow-500">
+              <span className="text-text font-semibold text-green-500">
                 {RECORD_DATA.status}
               </span>
             </p>
             <p className="text-xs text-muted">
-              Data-limite para homologação:{" "}
+              Homologado em:{" "}
               <span className="text-text font-semibold">
                 {RECORD_DATA.deadline}
               </span>
@@ -400,7 +402,7 @@ function RecordResultCard(props: {
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <Info
-              label="Assessor — registro temporário"
+              label="Título: Assessor de investimentos"
               value={RECORD_DATA.advisorName}
             />
             <Info label="CPF:" value={RECORD_DATA.cpf} />
@@ -422,10 +424,21 @@ function RecordResultCard(props: {
 
           <div className="rounded-xl border border-xpred/30 bg-black/20 p-4">
             <p className="text-sm text-text font-semibold">Aviso:</p>
-            <p className="mt-2 text-sm text-muted leading-relaxed text-justify">
-              Este registro é temporário e não autoriza o exercício de
-              assessor(a) de investimentos até sua homologação pela CVM,
-              conforme CVM 178 e 179, em conjunto com a Instrução CVM 610.
+            <p className="mt-1 text-xs text-muted">
+              O profissional detém{" "}
+              <span className="font-semibold text-text">
+                certificação e credenciamento válidos para o exercício da
+                atividade de assessor de investimentos
+              </span>
+              , comprometendo-se a atuar em conformidade com a{" "}
+              <span className="font-semibold text-text">
+                Resolução CVM nº 178
+              </span>
+              , com as demais normas aplicáveis e sob a responsabilidade da
+              instituição integrante do sistema de distribuição de valores
+              mobiliários à qual estiver vinculado. O fornecimento de
+              informações falsas, inexatas ou desatualizadas poderá resultar na
+              adoção das medidas administrativas, civis e penais cabíveis.
             </p>
           </div>
         </div>
