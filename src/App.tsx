@@ -23,7 +23,7 @@ const RECORD_FULL = `${RECORD_PREFIX}${VALID_RECORD_NUMBER}`;
 
 // Dados fixos (como você pediu)
 const RECORD_DATA = {
-  certification: `Certificação Ancord: ${RECORD_FULL} — Registro definitivo`,
+  certification: `Certificação Ancord: ${RECORD_FULL}`,
   status: `Homologado`,
   deadline: `30/07/2026`,
   queryDate: "19/06/2026",
@@ -260,7 +260,7 @@ function NoticeCard({
 
           <p className="mt-3 text-sm text-muted leading-relaxed">
             O Grupo XP, em parceria com a ANCORD, informa a conclusão do
-            processo de homologação junto a CVM e emissão do registro definitivo
+            processo de homologação junto a CVM e emissão do registro
             de <strong>Assessor de Investimentos</strong>.
           </p>
 
@@ -287,7 +287,7 @@ function NoticeCard({
 
           <div className="mt-4 rounded-xl border border-xpgreen/25 bg-gray-900/20 p-3 space-y-2">
             <p className="text-md text-text font-semibold">
-              Registro definitivo
+              Registro
             </p>
 
             <p className="text-sm">
@@ -381,21 +381,13 @@ function RecordResultCard(props: {
             <p className="text-sm text-text font-semibold text-pretty">
               {RECORD_DATA.certification}
             </p>
-            <p className="mt-1 text-xs text-muted">
-              <span className="text-text font-semibold">
-                Data da requisição: {RECORD_DATA.queryDate}
-              </span>
-            </p>
             <p className="text-xs text-muted">
               Status:{" "}
               <span className="text-text font-semibold text-green-500">
-                {RECORD_DATA.status}
+                {RECORD_DATA.status} {" "}
               </span>
-            </p>
-            <p className="text-xs text-muted">
-              Homologado em:{" "}
               <span className="text-text font-semibold">
-                {RECORD_DATA.deadline}
+              ({RECORD_DATA.deadline})  
               </span>
             </p>
           </div>
