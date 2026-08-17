@@ -629,7 +629,7 @@ export default function App() {
 
   return (
     <div className="min-h-full">
-      <div className="mx-auto max-w-4xl px-4 py-7">
+      <div className="mx-auto max-w-4xl px-0 py-3">
         <header className="mb-4">
           <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
@@ -949,7 +949,7 @@ function CommunicationsOverlay(props: {
       className="fixed inset-0 z-40 flex items-start justify-center overflow-hidden bg-black/60 p-0 backdrop-blur-md sm:p-6"
       role="dialog"
       aria-modal="true"
-      aria-label="Central de relacionamento"
+      aria-label="Central de comunicação"
     >
       <button
         type="button"
@@ -958,12 +958,12 @@ function CommunicationsOverlay(props: {
         onClick={props.onClose}
       />
 
-      <section className="relative flex h-dvh w-full max-w-5xl flex-col overflow-hidden border-border bg-card shadow-soft sm:mt-8 sm:h-[min(780px,calc(100vh-4rem))] sm:rounded-2xl sm:border">
+      <section className="relative flex h-dvh w-full max-w-7xl flex-col overflow-hidden border-border bg-card shadow-soft sm:h-[calc(100dvh-3rem)] sm:rounded-2xl sm:border">
         <header className="shrink-0 border-b border-border px-4 py-4 sm:px-5">
           <div className="flex items-start justify-between gap-3">
             <div>
               <h2 className="text-lg font-semibold text-text">
-                Central de relacionamento
+                Central de comunicação
               </h2>
               <p className="text-xs text-muted">
                 {activeTotalCount} itens no grupo, {activeUnreadCount} não lidos
