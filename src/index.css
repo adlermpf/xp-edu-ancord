@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+  --color-appbg: #171918;
+  --color-card: #1F2221;
+  --color-border: #2C3130;
+  --color-muted: #A7B0AD;
+  --color-text: #E9EFED;
+  --color-xpgreen: #2CE6A6;
+  --color-xpred: #FF5A6A;
+  --color-xpamber: #FFCC66;
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, .35);
+}
+
 :root {
   color-scheme: dark;
 }
