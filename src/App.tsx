@@ -629,7 +629,7 @@ export default function App() {
 
   return (
     <div className="min-h-full">
-      <div className="mx-auto max-w-4xl px-0 py-3">
+      <div className="mx-auto max-w-4xl p-2">
         <header className="mb-4">
           <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
