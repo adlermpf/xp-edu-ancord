@@ -74,7 +74,7 @@ const INITIAL_NOTIFICATIONS: Omit<PortfolioNotification, "read">[] = [
     from: "Débora Cristina Fischer | Hub de Relações Humanas, Grupo XP",
     subject:
       "Esclarecimento sobre o uso de madarim nas apresentações para entrevistas com AAIs",
-    date: "21/09/2026",
+    date: "22/09/2026",
     preview:
       "Esclarecimento sobre o uso de madarim nas apresentações para entrevistas com AAIs.",
     body: [
