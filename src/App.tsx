@@ -69,6 +69,21 @@ const CHAT_READ_STORAGE_KEY = "xp-edu-ancord:chat-read-ids";
 const CHAT_SENT_STORAGE_KEY = "xp-edu-ancord:chat-sent-messages";
 
 const INITIAL_NOTIFICATIONS: Omit<PortfolioNotification, "read">[] = [
+    {
+    id: "xp-rh-clarification",
+    from: "Débora Cristina Fischer | Hub de Relações Humanas, Grupo XP",
+    subject:
+      "Esclarecimento sobre o uso de madarim nas apresentações para entrevistas com AAIs",
+    date: "21/09/2026",
+    preview:
+      "Esclarecimento sobre o uso de madarim nas apresentações para entrevistas com AAIs.",
+    body: [
+      "Prezado Adler Moreira Pires Ferreira,",
+      "À medida que as aberturas comerciais brasileiras se deslocaram para a China, suas aquisições agrícolas dispararam aqui em Rio Preto e nas áreas circundantes. Para ajudar nossa equipe a se destacar ainda mais, o grupo XP está recrutando e incentivando pessoas que falam mandarim a se juntarem a nós. Embora falar mandarim seja um diferencial, não é obrigatório.",
+      "Qualquer dúvida a respeito do assunto estamos à disposição para esclarecimentos.",
+      "Atenciosamente,\nDébora Cristina Fischer\nChefe do Departamento de Relações Humanas\nGrupo XP",
+    ],
+  },
   {
     id: "xp-rh-invite-sjrp",
     from: "Débora Cristina Fischer | Hub de Relações Humanas, Grupo XP",
@@ -117,64 +132,126 @@ const INITIAL_NOTIFICATIONS: Omit<PortfolioNotification, "read">[] = [
 ];
 
 const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
-  // {
-  //   id: "wit-invest-visit",
-  //   contact: "Mariana Lopes | WIT Invest",
-  //   role: "AAI parceiro - São José do Rio Preto",
-  //   subject: "Agendamento de visita ao escritório",
-  //   date: "17/08/2026",
-  //   messages: [
-  //     {
-  //       id: "wit-1",
-  //       author: "contact",
-  //       sender: "Mariana Lopes",
-  //       sentAt: "17/08/2026 09:42",
-  //       text: "Olá, Adler. Recebemos sua indicação pelo Grupo XP para a etapa de visitas obrigatórias aos escritórios parceiros de São José do Rio Preto.",
-  //     },
-  //     {
-  //       id: "wit-2",
-  //       author: "contact",
-  //       sender: "Mariana Lopes",
-  //       sentAt: "17/08/2026 09:44",
-  //       text: "Encaminho a lâmina institucional inicial para você conhecer nossa estrutura, áreas de atendimento e modelo de trabalho antes do agendamento.",
-  //       attachments: [
-  //         {
-  //           id: "wit-lamina",
-  //           name: "Lâmina institucional - WIT Invest.pdf",
-  //           type: "pdf",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: "guide-xp-assessores",
-  //   contact: "Academia XP",
-  //   role: "Desenvolvimento de Assessores",
-  //   subject: "Guia dos assessores disponível",
-  //   date: "17/08/2026",
-  //   messages: [
-  //     {
-  //       id: "guide-1",
-  //       author: "contact",
-  //       sender: "Academia XP",
-  //       sentAt: "17/08/2026 11:10",
-  //       text: "Adler, o Guia dos Assessores do Grupo XP já está disponível nesta conversa para consulta durante sua preparação.",
-  //       attachments: [
-  //         {
-  //           id: "guide-pdf",
-  //           name: "Guia dos Assessores Grupo XP.pdf",
-  //           type: "pdf",
-  //         },
-  //         {
-  //           id: "guide-cover",
-  //           name: "Resumo visual do processo.png",
-  //           type: "image",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    id: "aai-marcos-freitas-interview",
+    contact: "Marcos Alexandro de Freitas",
+    role: "AAI WIT | Grupo XP",
+    subject: "Entrevista em 25/09/2026, às 9h",
+    date: "22/09/2026",
+    messages: [
+      {
+        id: "aai-marcos-1",
+        author: "contact",
+        sender: "Marcos Alexandro de Freitas",
+        sentAt: "22/09/2026 08:35",
+        text: "Olá, Adler. Sou Marcos Alexandro de Freitas e conduzirei sua entrevista com nossa equipe no dia 25 de setembro de 2026, às 9h. A conversa abordará sua experiência profissional, seu entendimento sobre o papel consultivo do assessor de investimentos e sua capacidade de transformar análises de mercado em recomendações claras para diferentes perfis de clientes.",
+      },
+      {
+        id: "aai-marcos-2",
+        author: "contact",
+        sender: "Marcos Alexandro de Freitas",
+        sentAt: "22/09/2026 08:37",
+        text: "Para a etapa técnica, prepare uma apresentação em PowerPoint sobre o tema “Navegando pela divergência de mercado com a estratégia Out of Favor”, com base no Relatório Trimestral de Estratégia de Ações - 2T26. Esperamos que você explique a divergência entre setores cíclicos domésticos, commodities e setores defensivos; apresente a lógica do indicador proprietário Out of Favor; e avalie como o filtro de qualidade pode ajudar a identificar oportunidades assimétricas. Inclua uma leitura crítica do retorno excedente anualizado de 16,6% sobre o CDI e dos riscos de utilizar a estratégia fora de períodos de divergência extrema.",
+      },
+      {
+        id: "aai-marcos-3",
+        author: "contact",
+        sender: "Marcos Alexandro de Freitas",
+        sentAt: "22/09/2026 08:39",
+        text: "A apresentação deve durar, no máximo, 45 minutos: 30 minutos em português e 15 minutos em inglês ou mandarim, a seu critério. Todos os slides, inclusive gráficos, fontes e notas, devem ser redigidos em inglês. Reserve os minutos finais para perguntas da equipe e esteja preparado para justificar premissas, limitações e aplicabilidade da estratégia. O uso do mandarim é um diferencial, mas não é obrigatório.",
+      },
+    ],
+  },
+  {
+    id: "aai-gabriel-rodrigues-interview",
+    contact: "Gabriel Durand Rodrigues",
+    role: "AAI Easy Invest | Grupo XP",
+    subject: "Entrevista em 05/10/2026, às 14h",
+    date: "22/09/2026",
+    messages: [
+      {
+        id: "aai-gabriel-1",
+        author: "contact",
+        sender: "Gabriel Durand Rodrigues",
+        sentAt: "22/09/2026 10:12",
+        text: "Olá, Adler. Sou Gabriel Durand Rodrigues. Sua entrevista está agendada para 5 de outubro de 2026, às 14h. Nesta etapa, queremos conhecer sua forma de raciocinar sob cenários adversos, sua disciplina na comunicação de riscos e sua capacidade de separar hipóteses, evidências e conclusões ao orientar investidores.",
+      },
+      {
+        id: "aai-gabriel-2",
+        author: "contact",
+        sender: "Gabriel Durand Rodrigues",
+        sentAt: "22/09/2026 10:14",
+        text: "Sua apresentação em PowerPoint terá como tema “Avaliação dos riscos macroeconômicos e perspectivas de resultados para 2027”, a partir do Relatório Trimestral Macroeconômico - 2T26. Contextualize a temporada de resultados mais fraca dos últimos três anos, discuta o cenário de revisão negativa de 19% para o lucro por ação do Ibovespa e teste a sensibilidade das projeções à receita 2% abaixo do consenso e à margem EBITDA de 27,5%. Relacione também o comportamento histórico do índice nos 12 meses anteriores a uma recessão e encerre com implicações práticas para clientes com diferentes horizontes de investimento.",
+      },
+      {
+        id: "aai-gabriel-3",
+        author: "contact",
+        sender: "Gabriel Durand Rodrigues",
+        sentAt: "22/09/2026 10:16",
+        text: "O limite total é de 45 minutos, distribuídos em 30 minutos em português e 15 minutos em inglês ou mandarim. Todos os slides devem estar integralmente em inglês. Dê preferência a gráficos legíveis, identifique as fontes e diferencie claramente o cenário-base das hipóteses pessimistas. A fluência em mandarim será considerada um diferencial, sem caráter eliminatório.",
+      },
+    ],
+  },
+  {
+    id: "aai-cristian-vries-interview",
+    contact: "Cristian Bakker de Vries",
+    role: "AAI A1 Investimentos | Grupo XP",
+    subject: "Entrevista em 26/10/2026, às 10h",
+    date: "22/09/2026",
+    messages: [
+      {
+        id: "aai-cristian-1",
+        author: "contact",
+        sender: "Cristian Bakker de Vries",
+        sentAt: "22/09/2026 13:48",
+        text: "Olá, Adler. Sou Cristian Bakker de Vries e participarei da sua entrevista no dia 26 de outubro de 2026, às 10h. Nossa conversa será voltada à construção de teses de investimento, ao uso responsável de múltiplos de mercado e à comunicação de cenários sem transformar projeções em promessas de retorno.",
+      },
+      {
+        id: "aai-cristian-2",
+        author: "contact",
+        sender: "Cristian Bakker de Vries",
+        sentAt: "22/09/2026 13:50",
+        text: "Prepare uma apresentação em PowerPoint sobre “Cenários de valuation do Ibovespa e análise de múltiplos”, com base no Relatório Trimestral de Estratégia de Ações - 2T26. Compare o valor justo de 200 mil pontos no cenário-base com os cenários pessimista, de 159 mil pontos, e otimista, de 253 mil pontos. Explique como lucro, EBITDA e juros reais alteram o valuation e analise criticamente o múltiplo P/L projetado de 8,3 vezes frente à média histórica de dez anos e aos demais mercados emergentes. Sua conclusão deve indicar quais variáveis merecem monitoramento contínuo.",
+      },
+      {
+        id: "aai-cristian-3",
+        author: "contact",
+        sender: "Cristian Bakker de Vries",
+        sentAt: "22/09/2026 13:52",
+        text: "A exposição deve respeitar o limite de 45 minutos: 30 minutos em português e 15 minutos em inglês ou mandarim. Todo o material visual deverá ser produzido em inglês, com premissas e fontes claramente identificadas. Avaliaremos a consistência do raciocínio, a objetividade das respostas e sua capacidade de explicar conceitos técnicos para uma audiência não especializada. O mandarim é opcional e será tratado apenas como diferencial.",
+      },
+    ],
+  },
+  {
+    id: "aai-guilherme-esposito-interview",
+    contact: "Guilherme Bianchi Esposito",
+    role: "AAI JFK Rio Preto | Grupo XP",
+    subject: "Entrevista em 16/11/2026, às 16h",
+    date: "22/09/2026",
+    messages: [
+      {
+        id: "aai-guilherme-1",
+        author: "contact",
+        sender: "Guilherme Bianchi Esposito",
+        sentAt: "22/09/2026 16:05",
+        text: "Olá, Adler. Sou Guilherme Bianchi Esposito. Sua entrevista com nossa equipe ocorrerá em 16 de novembro de 2026, às 16h. A etapa combinará uma conversa sobre sua trajetória comercial com um exercício de alocação, no qual observaremos como você equilibra convicção, diversificação, liquidez e adequação ao perfil do investidor.",
+      },
+      {
+        id: "aai-guilherme-2",
+        author: "contact",
+        sender: "Guilherme Bianchi Esposito",
+        sentAt: "22/09/2026 16:07",
+        text: "O tema da apresentação em PowerPoint será “Alocação tática de ativos e ajustes recomendados de portfólio”, fundamentado no Relatório Trimestral de Alocação - 2T26. Apresente a justificativa para o viés defensivo e de qualidade; avalie as inclusões de AXIA3 e CURY3; explique a retirada de LREN3; e examine o aumento de PETR4 para 12,5% na carteira de dividendos. Além de reproduzir as recomendações do relatório, proponha critérios de acompanhamento e indique em quais condições cada posição deveria ser revista.",
+      },
+      {
+        id: "aai-guilherme-3",
+        author: "contact",
+        sender: "Guilherme Bianchi Esposito",
+        sentAt: "22/09/2026 16:09",
+        text: "A apresentação terá duração máxima de 45 minutos, sendo 30 minutos em português e 15 minutos em inglês ou mandarim. Os slides devem ser escritos integralmente em inglês e apresentar dados, fontes e riscos de forma objetiva. Em razão do crescimento das relações comerciais entre o Brasil e a China, especialmente no agronegócio de São José do Rio Preto e região, o Grupo XP valoriza profissionais capazes de se comunicar em mandarim. Essa competência, contudo, é apenas um diferencial e não constitui requisito para a vaga.",
+      },
+    ],
+  },
 ];
 
 // Dados fixos (como você pediu)
@@ -185,9 +262,6 @@ const RECORD_DATA = {
   queryDate: "19/06/2026",
   expirationDate: "31/07/2026",
   advisorName: "Adler Moreira Pires Ferreira",
-  cpf: "396.532.928-62",
-  motherName: "Aurismar Belém Moreira",
-  birthCity: "Bodocó - PE",
   address:
     "Rua Édson Nores Lui 147 Q23L11, Gaivota 2, São José do Rio Preto - SP, CEP: 15063-065",
   requestingManager:
@@ -1328,8 +1402,6 @@ function ChatDetail(props: {
   onPrevious: () => void;
   onSubmit: (event: React.FormEvent) => void;
 }) {
-  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
-
   if (!props.chat) return null;
 
   const isFirstChat = props.selectedIndex <= 0;
@@ -1337,9 +1409,6 @@ function ChatDetail(props: {
 
   function handleSubmit(event: React.FormEvent) {
     props.onSubmit(event);
-    if (props.chatDraft.trim()) {
-      setSelectedFiles([]);
-    }
   }
 
   return (
@@ -1446,31 +1515,7 @@ function ChatDetail(props: {
         onSubmit={handleSubmit}
         className="shrink-0 border-t border-border bg-card px-4 py-3 sm:px-6"
       >
-        {selectedFiles.length > 0 ? (
-          <div className="mb-2 flex flex-wrap gap-2">
-            {selectedFiles.map((file) => (
-              <span
-                key={`${file.name}-${file.lastModified}`}
-                className="rounded-full border border-border px-3 py-1 text-xs text-muted"
-              >
-                {file.name}
-              </span>
-            ))}
-          </div>
-        ) : null}
         <div className="flex items-end gap-2">
-          <label className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-xl border border-border text-muted hover:bg-white/5">
-            <PaperclipIcon />
-            <input
-              type="file"
-              accept="application/pdf,image/*"
-              multiple
-              className="sr-only"
-              onChange={(event) =>
-                setSelectedFiles(Array.from(event.target.files ?? []))
-              }
-            />
-          </label>
           <textarea
             className="min-h-11 max-h-28 flex-1 resize-none rounded-xl border border-border bg-black/20 px-3 py-2 text-sm text-text outline-none focus:border-xpgreen/70"
             placeholder="Escreva uma resposta"
@@ -1529,25 +1574,6 @@ function InboxIcon() {
         strokeLinecap="round"
         strokeLinejoin="round"
         d="M4 13h4l1.6 3h4.8l1.6-3h4M5.5 19h13A1.5 1.5 0 0 0 20 17.5v-11A1.5 1.5 0 0 0 18.5 5h-13A1.5 1.5 0 0 0 4 6.5v11A1.5 1.5 0 0 0 5.5 19Z"
-      />
-    </svg>
-  );
-}
-
-function PaperclipIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-4 w-4"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth="2"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="m21.4 11.6-8.5 8.5a6 6 0 0 1-8.5-8.5l8.5-8.5a4 4 0 0 1 5.7 5.7l-8.5 8.5a2 2 0 0 1-2.8-2.8l7.8-7.8"
       />
     </svg>
   );
