@@ -136,7 +136,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
     id: "aai-marcos-freitas-interview",
     contact: "Marcos Alexandro de Freitas",
     role: "AAI WIT | Grupo XP",
-    subject: "Entrevista em 25/09/2026, às 9h",
+    subject: "Entrevista em 05/09/2026, às 9h",
     date: "22/09/2026",
     messages: [
       {
@@ -144,7 +144,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
         author: "contact",
         sender: "Marcos Alexandro de Freitas",
         sentAt: "22/09/2026 08:35",
-        text: "Olá, Adler. Sou Marcos Alexandro de Freitas e conduzirei sua entrevista com nossa equipe no dia 25 de setembro de 2026, às 9h. A conversa abordará sua experiência profissional, seu entendimento sobre o papel consultivo do assessor de investimentos e sua capacidade de transformar análises de mercado em recomendações claras para diferentes perfis de clientes.",
+        text: "Olá, Adler. Sou Marcos Alexandro de Freitas e conduzirei sua entrevista com nossa equipe no dia 05 de setembro de 2026, às 9h. A conversa abordará sua experiência profissional, seu entendimento sobre o papel consultivo do assessor de investimentos e sua capacidade de transformar análises de mercado em recomendações claras para diferentes perfis de clientes.",
       },
       {
         id: "aai-marcos-2",
@@ -166,7 +166,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
     id: "aai-gabriel-rodrigues-interview",
     contact: "Gabriel Durand Rodrigues",
     role: "AAI Easy Invest | Grupo XP",
-    subject: "Entrevista em 05/10/2026, às 14h",
+    subject: "Entrevista em 26/10/2026, às 14h",
     date: "22/09/2026",
     messages: [
       {
@@ -174,7 +174,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
         author: "contact",
         sender: "Gabriel Durand Rodrigues",
         sentAt: "22/09/2026 10:12",
-        text: "Olá, Adler. Sou Gabriel Durand Rodrigues. Sua entrevista está agendada para 5 de outubro de 2026, às 14h. Nesta etapa, queremos conhecer sua forma de raciocinar sob cenários adversos, sua disciplina na comunicação de riscos e sua capacidade de separar hipóteses, evidências e conclusões ao orientar investidores.",
+        text: "Olá, Adler. Sou Gabriel Durand Rodrigues. Sua entrevista está agendada para 26 de outubro de 2026, às 14h. Nesta etapa, queremos conhecer sua forma de raciocinar sob cenários adversos, sua disciplina na comunicação de riscos e sua capacidade de separar hipóteses, evidências e conclusões ao orientar investidores.",
       },
       {
         id: "aai-gabriel-2",
@@ -196,7 +196,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
     id: "aai-cristian-vries-interview",
     contact: "Cristian Bakker de Vries",
     role: "AAI A1 Investimentos | Grupo XP",
-    subject: "Entrevista em 26/10/2026, às 10h",
+    subject: "Entrevista em 16/11/2026, às 10h",
     date: "22/09/2026",
     messages: [
       {
@@ -204,7 +204,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
         author: "contact",
         sender: "Cristian Bakker de Vries",
         sentAt: "22/09/2026 13:48",
-        text: "Olá, Adler. Sou Cristian Bakker de Vries e participarei da sua entrevista no dia 26 de outubro de 2026, às 10h. Nossa conversa será voltada à construção de teses de investimento, ao uso responsável de múltiplos de mercado e à comunicação de cenários sem transformar projeções em promessas de retorno.",
+        text: "Olá, Adler. Sou Cristian Bakker de Vries e participarei da sua entrevista no dia 16 de novembro de 2026, às 10h. Nossa conversa será voltada à construção de teses de investimento, ao uso responsável de múltiplos de mercado e à comunicação de cenários sem transformar projeções em promessas de retorno.",
       },
       {
         id: "aai-cristian-2",
@@ -226,7 +226,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
     id: "aai-guilherme-esposito-interview",
     contact: "Guilherme Bianchi Esposito",
     role: "AAI JFK Rio Preto | Grupo XP",
-    subject: "Entrevista em 16/11/2026, às 16h",
+    subject: "Entrevista em 07/12/2026, às 16h",
     date: "22/09/2026",
     messages: [
       {
@@ -234,7 +234,7 @@ const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
         author: "contact",
         sender: "Guilherme Bianchi Esposito",
         sentAt: "22/09/2026 16:05",
-        text: "Olá, Adler. Sou Guilherme Bianchi Esposito. Sua entrevista com nossa equipe ocorrerá em 16 de novembro de 2026, às 16h. A etapa combinará uma conversa sobre sua trajetória comercial com um exercício de alocação, no qual observaremos como você equilibra convicção, diversificação, liquidez e adequação ao perfil do investidor.",
+        text: "Olá, Adler. Sou Guilherme Bianchi Esposito. Sua entrevista com nossa equipe ocorrerá em 7 de dezembro de 2026, às 16h. A etapa combinará uma conversa sobre sua trajetória comercial com um exercício de alocação, no qual observaremos como você equilibra convicção, diversificação, liquidez e adequação ao perfil do investidor.",
       },
       {
         id: "aai-guilherme-2",
