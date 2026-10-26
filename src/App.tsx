@@ -133,6 +133,22 @@ const INITIAL_NOTIFICATIONS: Omit<PortfolioNotification, "read">[] = [
 
 const INITIAL_CHATS: Omit<PortfolioChat, "read">[] = [
   {
+    id: "aai-gabriel-rodrigues-interview",
+    contact: "Gabriel Durand Rodrigues",
+    role: "AAI Easy Invest | Grupo XP",
+    subject: "Comunicado sobre entrevista em 26/10/2026, às 14h",
+    date: "26/10/2026",
+    messages: [
+      {
+        id: "aai-gabriel-1",
+        author: "contact",
+        sender: "Gabriel Durand Rodrigues",
+        sentAt: "26/10/2026 08:41",
+        text: "Olá, Adler, bom dia. Devido a chuva deste final de semana, nosso escritório está passando por problemas técnicos diversos, portanto a entrevista com nossa equipe foi reagendada para 29 de outubro de 2026, às 8h. Peço desculpas pelo transtorno e agradeço sua compreensão. Se não for possível comparecer, por favor, me avise neste mesmo canal para que possamos reagendar.",
+      },
+    ],
+  },
+  {
     id: "aai-marcos-freitas-interview",
     contact: "Marcos Alexandro de Freitas",
     role: "AAI WIT | Grupo XP",
